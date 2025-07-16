@@ -6,12 +6,32 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+  background-image: url('https://scontent.ftpe8-2.fna.fbcdn.net/v/t39.30808-6/309020404_108834851991275_2406237245447029104_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=Bu7tPPKsKK0Q7kNvwGdxzLI&_nc_oc=AdnjDo3bqFvl-MddPrMKGpkU6e1iqwPgY11wBqOxQmHWJ3ejgmQ-NltMEuutgA-6wnM&_nc_zt=23&_nc_ht=scontent.ftpe8-2.fna&_nc_gid=UabcBlfH2jcNCc8UaMOBJw&oh=00_AfRmMz1tQhE19xv6z3O9OeHGtwliWa5H9hXDTi50jBhPGA&oe=687D3A9A');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(5px);
   min-height: 100vh;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   padding-top: 15vh;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://scontent.ftpe8-2.fna.fbcdn.net/v/t39.30808-6/309020404_108834851991275_2406237245447029104_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=Bu7tPPKsKK0Q7kNvwGdxzLI&_nc_oc=AdnjDo3bqFvl-MddPrMKGpkU6e1iqwPgY11wBqOxQmHWJ3ejgmQ-NltMEuutgA-6wnM&_nc_zt=23&_nc_ht=scontent.ftpe8-2.fna&_nc_gid=UabcBlfH2jcNCc8UaMOBJw&oh=00_AfRmMz1tQhE19xv6z3O9OeHGtwliWa5H9hXDTi50jBhPGA&oe=687D3A9A');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(3px);
+  z-index: -1;
 }
 
 .search-container {
@@ -22,6 +42,38 @@ body {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  position: relative;
+  z-index: 1;
+}
+
+.search-btn {
+  background: linear-gradient(135deg, #4285f4, #34a853);
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(66, 133, 244, 0.3);
+}
+
+.search-btn:hover {
+  background: linear-gradient(135deg, #3367d6, #2d8f47);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(66, 133, 244, 0.4);
+}
+
+.search-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 10px rgba(66, 133, 244, 0.3);
 }
 
 .title {

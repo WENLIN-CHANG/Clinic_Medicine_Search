@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   const searchInput = document.getElementById('searchInput');
   const clearBtn = document.getElementById('clearBtn');
+  const searchBtn = document.getElementById('searchBtn');
 
   clearBtn.addEventListener('click', function() {
     searchInput.value = '';
@@ -13,10 +14,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
+  searchBtn.addEventListener('click', function() {
+    performSearch();
+  });
+
   function performSearch() {
     const searchTerm = searchInput.value.trim();
     if (searchTerm) {
-      console.log('', searchTerm);
+      console.log('搜尋：', searchTerm);
     }
   }
 });

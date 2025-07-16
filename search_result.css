@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('https://scontent.ftpe8-2.fna.fbcdn.net/v/t39.30808-6/309020404_108834851991275_2406237245447029104_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=Bu7tPPKsKK0Q7kNvwGdxzLI&_nc_oc=AdnjDo3bqFvl-MddPrMKGpkU6e1iqwPgY11wBqOxQmHWJ3ejgmQ-NltMEuutgA-6wnM&_nc_zt=23&_nc_ht=scontent.ftpe8-2.fna&_nc_gid=UabcBlfH2jcNCc8UaMOBJw&oh=00_AfRmMz1tQhE19xv6z3O9OeHGtwliWa5H9hXDTi50jBhPGA&oe=687D3A9A');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://scontent.ftpe8-2.fna.fbcdn.net/v/t39.30808-6/309020404_108834851991275_2406237245447029104_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=Bu7tPPKsKK0Q7kNvwGdxzLI&_nc_oc=AdnjDo3bqFvl-MddPrMKGpkU6e1iqwPgY11wBqOxQmHWJ3ejgmQ-NltMEuutgA-6wnM&_nc_zt=23&_nc_ht=scontent.ftpe8-2.fna&_nc_gid=UabcBlfH2jcNCc8UaMOBJw&oh=00_AfRmMz1tQhE19xv6z3O9OeHGtwliWa5H9hXDTi50jBhPGA&oe=687D3A9A');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(3px);
+  z-index: -1;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.title {
+  color: #333;
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  min-height: 70vh;
+}
+
+.left-column,
+.right-column {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.left-column h2,
+.right-column h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #4285f4;
+  padding-bottom: 10px;
+}
+
+.search-results,
+.drug-details {
+  min-height: 500px;
+  padding: 20px 0;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+  .content-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .main-container {
+    padding: 15px;
+  }
+  
+  .left-column,
+  .right-column {
+    padding: 20px;
+  }
+}

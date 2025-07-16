@@ -30,7 +30,7 @@ body::before {
 }
 
 .main-container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 20px;
   position: relative;
@@ -128,7 +128,113 @@ body::before {
   display: block;
 }
 
+.detail-item {
+  margin-bottom: 25px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  border-left: 4px solid #4285f4;
+}
+
+.detail-item h3 {
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 5px;
+}
+
+.drug-name-zh {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.drug-name-en {
+  font-size: 16px;
+  color: #666;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+.common-dosage,
+.director-dosage {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.director-dosage {
+  font-weight: bold;
+  color: #d32f2f;
+}
+
+.toggle-btn {
+  background: #4285f4;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 10px;
+  transition: background 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background: #3367d6;
+}
+
+.side-effects {
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  margin-top: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+.side-effects p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.package-link {
+  display: inline-block;
+  background: #34a853;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.package-link:hover {
+  background: #2d8f47;
+  text-decoration: none;
+}
+
 /* 響應式設計 */
+@media (min-width: 1600px) {
+  .main-container {
+    max-width: 1600px;
+  }
+  
+  .content-container {
+    gap: 40px;
+  }
+  
+  .left-column,
+  .right-column {
+    padding: 40px;
+  }
+}
+
 @media (max-width: 768px) {
   .content-container {
     grid-template-columns: 1fr;

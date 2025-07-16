@@ -24,7 +24,34 @@
         </div>
         <h2>藥物詳細資訊</h2>
         <div class="drug-details">
-          <!-- 藥物詳細資訊會在這裡顯示 -->
+          <div class="detail-item">
+            <h3>藥品名稱</h3>
+            <p class="drug-name-zh">中文名稱</p>
+            <p class="drug-name-en">English Name</p>
+          </div>
+          
+          <div class="detail-item">
+            <h3>常用劑量</h3>
+            <p class="common-dosage">劑量資訊</p>
+          </div>
+          
+          <div class="detail-item">
+            <h3>副作用</h3>
+            <button class="toggle-btn" id="sideEffectsToggle">展開 ▼</button>
+            <div class="side-effects" id="sideEffects" style="display: none;">
+              <p>副作用詳細資訊</p>
+            </div>
+          </div>
+          
+          <div class="detail-item">
+            <h3>仿單連結</h3>
+            <a href="#" class="package-link" target="_blank">開啟仿單 (新視窗)</a>
+          </div>
+          
+          <div class="detail-item">
+            <h3>院長門診常用劑量</h3>
+            <p class="director-dosage">院長建議劑量</p>
+          </div>
         </div>
       </div>
       

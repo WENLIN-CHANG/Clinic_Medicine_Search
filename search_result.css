@@ -40,6 +40,7 @@ body::before {
 .header {
   text-align: center;
   margin-bottom: 30px;
+  position: relative;
 }
 
 .title {
@@ -47,10 +48,10 @@ body::before {
   font-size: 28px;
   font-weight: bold;
   text-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  background: rgba(255, 255, 255, 0.9);
   padding: 20px;
   border-radius: 15px;
-  backdrop-filter: blur(10px);
+  margin: 0 auto;
+  display: inline-block;
 }
 
 .content-container {
@@ -69,6 +70,33 @@ body::before {
   backdrop-filter: blur(10px);
 }
 
+.return-btn {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  background: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(66, 133, 244, 0.3);
+  z-index: 10;
+}
+
+.return-btn:hover {
+  background: #3367d6;
+  transform: translateY(-50%) translateY(-2px);
+  box-shadow: 0 4px 15px rgba(66, 133, 244, 0.4);
+}
+
+.return-btn:active {
+  transform: translateY(-50%) translateY(0);
+}
+
 .left-column h2,
 .right-column h2 {
   color: #333;
@@ -82,6 +110,22 @@ body::before {
 .drug-details {
   min-height: 500px;
   padding: 20px 0;
+}
+
+.drug-image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.drug-image {
+  max-width: 200px;
+  max-height: 200px;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: block;
 }
 
 /* 響應式設計 */

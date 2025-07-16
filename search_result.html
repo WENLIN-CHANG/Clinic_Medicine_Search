@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>搜尋結果 - 新螺安診所藥物查詢系統</title>
   <link rel="stylesheet" href="search_result.css">
-  <script type="module" src="app.js"></script>
+  <script type="module" src="search_result.js"></script>
 </head>
 <body>
   <div class="main-container">
     <header class="header">
+      <button class="return-btn" id="returnBtn">← 返回首頁</button>
       <h1 class="title">新螺安診所藥物查詢系統</h1>
     </header>
     
@@ -17,7 +18,9 @@
       <div class="left-column">
         <h2>搜尋結果</h2>
         <div class="search-results">
-          <!-- 搜尋結果會在這裡顯示 -->
+          <div class="drug-image-container">
+            <img src="" alt="藥品圖片" class="drug-image" id="drugImage" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjBGMEYwIi8+CjxwYXRoIGQ9Ik0xMDAgNTBWMTUwTTUwIDEwMEgxNTAiIHN0cm9rZT0iIzk5OTk5OSIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjBGMEYwIi8+CjxwYXRoIGQ9Ik0xMDAgNTBWMTUwTTUwIDEwMEgxNTAiIHN0cm9rZT0iIzk5OTk5OSIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPHN2Zz4='">
+          </div>
         </div>
         <h2>藥物詳細資訊</h2>
         <div class="drug-details">

@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const returnBtn = document.getElementById('returnBtn');
   const sideEffectsToggle = document.getElementById('sideEffectsToggle');
   const sideEffects = document.getElementById('sideEffects');
+  const storageLocationBtn = document.getElementById('storageLocationBtn');
   
   returnBtn.addEventListener('click', function() {
     window.location.href = 'index.html';
@@ -15,5 +16,9 @@ document.addEventListener('DOMContentLoaded', function() {
       sideEffects.style.display = 'none';
       sideEffectsToggle.textContent = '展開 ▼';
     }
+  });
+  
+  storageLocationBtn.addEventListener('click', function() {
+    window.location.href = 'storage_location.html';
   });
 });

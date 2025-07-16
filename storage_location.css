@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('https://scontent.ftpe8-2.fna.fbcdn.net/v/t39.30808-6/309020404_108834851991275_2406237245447029104_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=Bu7tPPKsKK0Q7kNvwGdxzLI&_nc_oc=AdnjDo3bqFvl-MddPrMKGpkU6e1iqwPgY11wBqOxQmHWJ3ejgmQ-NltMEuutgA-6wnM&_nc_zt=23&_nc_ht=scontent.ftpe8-2.fna&_nc_gid=UabcBlfH2jcNCc8UaMOBJw&oh=00_AfRmMz1tQhE19xv6z3O9OeHGtwliWa5H9hXDTi50jBhPGA&oe=687D3A9A');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://scontent.ftpe8-2.fna.fbcdn.net/v/t39.30808-6/309020404_108834851991275_2406237245447029104_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=Bu7tPPKsKK0Q7kNvwGdxzLI&_nc_oc=AdnjDo3bqFvl-MddPrMKGpkU6e1iqwPgY11wBqOxQmHWJ3ejgmQ-NltMEuutgA-6wnM&_nc_zt=23&_nc_ht=scontent.ftpe8-2.fna&_nc_gid=UabcBlfH2jcNCc8UaMOBJw&oh=00_AfRmMz1tQhE19xv6z3O9OeHGtwliWa5H9hXDTi50jBhPGA&oe=687D3A9A');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(3px);
+  z-index: -1;
+}
+
+.main-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.title {
+  color: #333;
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 20px;
+  border-radius: 15px;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.content-container {
+  display: block;
+  min-height: 80vh;
+}
+
+.storage-column {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  width: 100%;
+}
+
+.return-btn {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  background: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(66, 133, 244, 0.3);
+  z-index: 10;
+}
+
+.return-btn:hover {
+  background: #3367d6;
+  transform: translateY(-50%) translateY(-2px);
+  box-shadow: 0 4px 15px rgba(66, 133, 244, 0.4);
+}
+
+.return-btn:active {
+  transform: translateY(-50%) translateY(0);
+}
+
+.storage-column h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #4285f4;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.storage-column h3 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.drug-info-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  border-left: 4px solid #34a853;
+}
+
+.drug-display {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.drug-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.drug-name-display h4 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.drug-name-display p {
+  color: #666;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.cabinet-selection {
+  margin-bottom: 30px;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.cabinet-layout {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.left-cabinet, .right-cabinet {
+  flex: 1;
+}
+
+.left-cabinet h3, .right-cabinet h3 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.left-cabinet {
+  border-right: 2px solid rgba(66, 133, 244, 0.3);
+  padding-right: 20px;
+}
+
+.cabinet-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cabinet-cell {
+  border: 2px solid #4285f4;
+  padding: 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.95);
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 8px;
+  min-height: 60px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cabinet-cell:hover {
+  background: rgba(66, 133, 244, 0.3);
+  transform: scale(1.05);
+}
+
+
+/* 響應式設計 */
+@media (min-width: 1600px) {
+  .main-container {
+    max-width: 1600px;
+  }
+  
+  .storage-column {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    padding: 15px;
+  }
+  
+  .storage-column {
+    padding: 20px;
+  }
+  
+  .cabinet-layout {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .left-cabinet {
+    border-right: none;
+    padding-right: 0;
+    border-bottom: 2px solid rgba(66, 133, 244, 0.3);
+    padding-bottom: 20px;
+  }
+}

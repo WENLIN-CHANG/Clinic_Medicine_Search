@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // 返回按鈕功能
   returnBtn.addEventListener('click', function() {
-    window.location.href = 'search_result.html';
+    window.location.href = '../html/search_result.html';
   });
   
   // 儲位點擊功能

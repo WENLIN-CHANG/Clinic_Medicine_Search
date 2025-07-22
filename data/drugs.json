@@ -1,0 +1,95 @@
+[
+  {
+    "id": 1,
+    "name_zh": "普拿疼",
+    "name_en": "Panadol",
+    "image": "/img/panadol.jpg",
+    "dosage": "500mg 每日3次，餐後服用",
+    "side_effects": [
+      "少見副作用包括皮疹、蕁麻疹等過敏反應",
+      "長期大量使用可能造成肝功能損害",
+      "偶有腸胃不適、噁心症狀"
+    ],
+    "package_insert": "https://www.fda.gov.tw/TC/includes/GetFile.ashx?id=f637259370643755686",
+    "director_dosage": "院長建議成人每次500mg，每日最多4次，兒童請依體重調整劑量",
+    "storage_location": null
+  },
+  {
+    "id": 2,
+    "name_zh": "阿斯匹靈",
+    "name_en": "Aspirin",
+    "image": "/img/aspirin.jpg",
+    "dosage": "100mg 每日1次，餐後服用",
+    "side_effects": [
+      "腸胃刺激、胃痛、噁心、嘔吐",
+      "可能引起胃出血或潰瘍",
+      "過敏反應如皮疹、呼吸困難",
+      "耳鳴、聽力受損（高劑量時）"
+    ],
+    "package_insert": "https://www.fda.gov.tw/TC/includes/GetFile.ashx?id=f637259370643755687",
+    "director_dosage": "院長建議心血管預防用量每日100mg，解熱鎮痛每次500mg",
+    "storage_location": null
+  },
+  {
+    "id": 3,
+    "name_zh": "布洛芬",
+    "name_en": "Ibuprofen",
+    "image": "/img/ibuprofen.jpg",
+    "dosage": "400mg 每日2-3次，餐後服用",
+    "side_effects": [
+      "腸胃不適、胃痛、消化不良",
+      "頭暈、頭痛、疲倦",
+      "可能影響腎功能",
+      "皮膚過敏反應"
+    ],
+    "package_insert": "https://www.fda.gov.tw/TC/includes/GetFile.ashx?id=f637259370643755688",
+    "director_dosage": "院長建議成人每次400mg，每日不超過1200mg，服用時間不宜過長",
+    "storage_location": null
+  },
+  {
+    "id": 4,
+    "name_zh": "克流感",
+    "name_en": "Tamiflu",
+    "image": "/img/tamiflu.jpg",
+    "dosage": "75mg 每日2次，連續5天",
+    "side_effects": [
+      "噁心、嘔吐、腹瀉",
+      "頭痛、疲倦感",
+      "偶有行為異常、幻覺（兒童及青少年）",
+      "皮膚過敏反應"
+    ],
+    "package_insert": "https://www.fda.gov.tw/TC/includes/GetFile.ashx?id=f637259370643755689",
+    "director_dosage": "院長建議發病48小時內開始服用效果最佳，成人75mg每日兩次",
+    "storage_location": null
+  },
+  {
+    "id": 5,
+    "name_zh": "胃藥",
+    "name_en": "Antacid",
+    "image": "/img/antacid.jpg",
+    "dosage": "1-2錠 飯後1小時及睡前服用",
+    "side_effects": [
+      "便秘或腹瀉",
+      "偶有腹部不適",
+      "長期使用可能影響其他藥物吸收"
+    ],
+    "package_insert": "https://www.fda.gov.tw/TC/includes/GetFile.ashx?id=f637259370643755690",
+    "director_dosage": "院長建議症狀嚴重時可增加服用頻率，但一日不超過8錠",
+    "storage_location": null
+  },
+  {
+    "id": 6,
+    "name_zh": "止咳糖漿",
+    "name_en": "Cough Syrup",
+    "image": "/img/cough_syrup.jpg",
+    "dosage": "成人每次10ml，每日3-4次",
+    "side_effects": [
+      "嗜睡、疲倦感",
+      "偶有口乾、便秘",
+      "過量使用可能造成依賴性"
+    ],
+    "package_insert": "https://www.fda.gov.tw/TC/includes/GetFile.ashx?id=f637259370643755691",
+    "director_dosage": "院長建議兒童劑量需依年齡體重調整，避免長期使用",
+    "storage_location": null
+  }
+]

@@ -10,8 +10,8 @@ This is a clinic medicine search application - a web application for "新螺安�
 
 ```
 /
+├── index.html                  # Homepage with search interface (main entry)
 ├── html/
-│   ├── index.html              # Homepage with search interface
 │   ├── search_result.html      # Search results page
 │   └── storage_location.html   # Storage location selection page
 ├── css/
@@ -25,19 +25,20 @@ This is a clinic medicine search application - a web application for "新螺安�
 ├── img/
 │   └── 新螺安背景.jpg           # Clinic background image
 ├── package.json                # Project configuration and dependencies
+├── vite.config.js              # Vite development server configuration
 ├── commit_message_rule.md      # Git commit message standards
 └── CLAUDE.md                   # This file
 ```
 
 ## Page Navigation Flow
 
-1. **Homepage (html/index.html)**: Search interface with centered search box and "搜尋" button
+1. **Homepage (index.html)**: Search interface with centered search box and "搜尋" button
 2. **Search Results (html/search_result.html)**: Displays drug information and cabinet grid
 3. **Storage Location (html/storage_location.html)**: Cabinet location selection interface
 
 ## Key Features Implemented
 
-### Homepage (html/index.html)
+### Homepage (index.html)
 - Centered search interface with title "新螺安診所藥物查詢系統"
 - Search input with placeholder "請輸入藥品中文名或英文名"
 - Clear button (×) functionality
@@ -78,8 +79,13 @@ This is a frontend-only project using vanilla HTML, CSS, and JavaScript with ES6
 - Module-based JavaScript architecture
 
 ### Development Commands
-- `npm run dev` - Start Vite development server (recommended for development)
-- Alternative: Open `html/index.html` directly in a browser for quick testing
+- `npm run dev` - Start Vite development server at http://localhost:5173 (recommended for development)
+- Alternative: Open `index.html` directly in a browser for quick testing
+
+### Vite Configuration
+- Project configured with `vite.config.js` to serve files from project root
+- Main entry point: `index.html` in root directory
+- Build output configured to `dist/` directory
 
 ## Styling Guidelines
 

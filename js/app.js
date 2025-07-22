@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const searchTerm = searchInput.value.trim();
     if (searchTerm) {
       console.log('搜尋：', searchTerm);
+      window.location.href = '/html/search_result.html';
     }
   }
 });

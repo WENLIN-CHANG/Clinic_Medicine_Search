@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const storageLocationBtn = document.getElementById('storageLocationBtn');
   
   returnBtn.addEventListener('click', function() {
-    window.location.href = '../html/index.html';
+    window.location.href = '/index.html';
   });
   
   sideEffectsToggle.addEventListener('click', function() {
@@ -19,6 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
   storageLocationBtn.addEventListener('click', function() {
-    window.location.href = '../html/storage_location.html';
+    window.location.href = '/html/storage_location.html';
   });
 });

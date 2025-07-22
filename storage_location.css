@@ -6,7 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-image: url('https://scontent.ftpe8-2.fna.fbcdn.net/v/t39.30808-6/309020404_108834851991275_2406237245447029104_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=Bu7tPPKsKK0Q7kNvwGdxzLI&_nc_oc=AdnjDo3bqFvl-MddPrMKGpkU6e1iqwPgY11wBqOxQmHWJ3ejgmQ-NltMEuutgA-6wnM&_nc_zt=23&_nc_ht=scontent.ftpe8-2.fna&_nc_gid=UabcBlfH2jcNCc8UaMOBJw&oh=00_AfRmMz1tQhE19xv6z3O9OeHGtwliWa5H9hXDTi50jBhPGA&oe=687D3A9A');
+  background-image: url('/新螺安背景.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -21,7 +21,7 @@ body::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('https://scontent.ftpe8-2.fna.fbcdn.net/v/t39.30808-6/309020404_108834851991275_2406237245447029104_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=Bu7tPPKsKK0Q7kNvwGdxzLI&_nc_oc=AdnjDo3bqFvl-MddPrMKGpkU6e1iqwPgY11wBqOxQmHWJ3ejgmQ-NltMEuutgA-6wnM&_nc_zt=23&_nc_ht=scontent.ftpe8-2.fna&_nc_gid=UabcBlfH2jcNCc8UaMOBJw&oh=00_AfRmMz1tQhE19xv6z3O9OeHGtwliWa5H9hXDTi50jBhPGA&oe=687D3A9A');
+  background-image: url('/新螺安背景.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

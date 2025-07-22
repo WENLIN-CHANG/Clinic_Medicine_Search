@@ -71,9 +71,8 @@ This is a frontend-only project using vanilla HTML, CSS, and JavaScript with ES6
 - Module-based JavaScript architecture
 
 ### Development Commands
-Since this is a vanilla web project with no build tools:
-- Open `index.html` directly in a browser for development
-- Use a local development server for better development experience (e.g., `python -m http.server 8000`)
+- `npm run dev` - Start Vite development server (recommended for development)
+- Alternative: Open `index.html` directly in a browser for quick testing
 
 ## Styling Guidelines
 
@@ -85,8 +84,26 @@ Since this is a vanilla web project with no build tools:
 
 ## JavaScript Functionality
 
-- Search functionality (console logging)
-- Navigation between pages
-- Collapsible sections
-- Button click animations
-- Cabinet cell selection feedback
+Each page has its own JavaScript file with specific functionality:
+
+### app.js (Homepage)
+- Search input handling with Enter key support
+- Clear button functionality
+- Basic search logging (no actual search implementation yet)
+
+### search_result.js
+- Return to homepage navigation
+- Collapsible side effects section toggle
+- Navigation to storage location page
+
+### storage_location.js
+- Return to search results navigation
+- Cabinet cell click handling with visual feedback
+- Console logging of selected storage locations
+
+## Git Commit Convention
+
+This project follows a specific commit message format. See `commit_message_rule.md` for detailed guidelines:
+- Use types: feat, modify, fix, docs, style, refactor, test, chore, revert
+- Format: `TYPE: SUBJECT` with optional body and footer
+- Subject should be under 50 characters, start with capital letter

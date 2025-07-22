@@ -1,0 +1,227 @@
+/**
+ * 新螺安診所 - 通用樣式
+ * 統一管理背景、色彩變數和基礎樣式
+ */
+
+/* CSS 變數定義 */
+:root {
+  --primary_color: #4285f4;
+  --primary_hover: #3367d6;
+  --secondary_color: #ff9800;
+  --secondary_hover: #f57c00;
+  --success_color: #34a853;
+  --success_hover: #2d8f47;
+  --danger_color: #d32f2f;
+  
+  --text_primary: #333;
+  --text_secondary: #666;
+  --text_muted: #999;
+  
+  --background_white: rgba(255, 255, 255, 0.9);
+  --background_light: rgba(255, 255, 255, 0.85);
+  --background_medium: rgba(255, 255, 255, 0.6);
+  --background_transparent: rgba(255, 255, 255, 0.3);
+  
+  --shadow_light: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow_medium: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow_heavy: 0 10px 30px rgba(0, 0, 0, 0.2);
+  
+  --border_radius_small: 8px;
+  --border_radius_medium: 15px;
+  --border_radius_large: 25px;
+  
+  --transition_fast: all 0.2s ease;
+  --transition_normal: all 0.3s ease;
+}
+
+/* 重置樣式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 通用背景樣式 */
+.clinic_background {
+  font-family: Arial, sans-serif;
+  background-image: url('/img/新螺安背景.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+}
+
+.clinic_background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/img/新螺安背景.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(3px);
+  z-index: -1;
+}
+
+/* 主要容器樣式 */
+.main_container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+/* 標題樣式 */
+.title {
+  color: var(--text_primary);
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: var(--shadow_light);
+  text-align: center;
+}
+
+/* 返回按鈕通用樣式 */
+.return_btn {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  background: var(--primary_color);
+  color: white;
+  border: none;
+  border-radius: var(--border_radius_large);
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: var(--transition_normal);
+  box-shadow: 0 2px 10px rgba(66, 133, 244, 0.3);
+  z-index: 10;
+}
+
+.return_btn:hover {
+  background: var(--primary_hover);
+  transform: translateY(-50%) translateY(-2px);
+  box-shadow: 0 4px 15px rgba(66, 133, 244, 0.4);
+}
+
+.return_btn:active {
+  transform: translateY(-50%) translateY(0);
+}
+
+/* 內容容器樣式 */
+.content_container {
+  display: block;
+  min-height: 80vh;
+}
+
+/* 白色內容區域 */
+.white_container {
+  background: var(--background_white);
+  padding: 30px;
+  border-radius: var(--border_radius_medium);
+  box-shadow: var(--shadow_heavy);
+  backdrop-filter: blur(10px);
+  width: 100%;
+}
+
+/* 標題和分隔線 */
+.section_title {
+  color: var(--text_primary);
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--primary_color);
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+/* 按鈕基礎樣式 */
+.btn_primary {
+  background: var(--primary_color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: var(--transition_normal);
+  box-shadow: 0 2px 5px rgba(66, 133, 244, 0.3);
+}
+
+.btn_primary:hover {
+  background: var(--primary_hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(66, 133, 244, 0.4);
+}
+
+.btn_secondary {
+  background: var(--secondary_color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: var(--transition_normal);
+  box-shadow: 0 2px 5px rgba(255, 152, 0, 0.3);
+}
+
+.btn_secondary:hover {
+  background: var(--secondary_hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(255, 152, 0, 0.4);
+}
+
+.btn_success {
+  background: var(--success_color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+  transition: var(--transition_normal);
+}
+
+.btn_success:hover {
+  background: var(--success_hover);
+  text-decoration: none;
+}
+
+/* 響應式設計 */
+@media (min-width: 1600px) {
+  .main_container {
+    max-width: 1600px;
+  }
+  
+  .white_container {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main_container {
+    padding: 15px;
+  }
+  
+  .white_container {
+    padding: 20px;
+  }
+  
+  .return_btn {
+    position: static;
+    transform: none;
+    margin-bottom: 20px;
+    display: block;
+    width: fit-content;
+  }
+  
+  .return_btn:hover {
+    transform: translateY(-2px);
+  }
+}

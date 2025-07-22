@@ -63,13 +63,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // 更新藥品名稱
-    const drugNameZh = document.querySelector('.drug-name-zh');
-    const drugNameEn = document.querySelector('.drug-name-en');
+    const drugNameZh = document.querySelector('.drug_name_zh');
+    const drugNameEn = document.querySelector('.drug_name_en');
     if (drugNameZh) drugNameZh.textContent = drug.name_zh;
     if (drugNameEn) drugNameEn.textContent = drug.name_en;
 
     // 更新常用劑量
-    const commonDosage = document.querySelector('.common-dosage');
+    const commonDosage = document.querySelector('.common_dosage');
     if (commonDosage) commonDosage.textContent = drug.dosage;
 
     // 更新副作用
@@ -84,14 +84,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // 更新仿單連結
-    const packageLink = document.querySelector('.package-link');
+    const packageLink = document.querySelector('.package_link');
     if (packageLink) {
       packageLink.href = drug.package_insert || '#';
       packageLink.textContent = drug.package_insert ? '開啟仿單 (新視窗)' : '仿單連結暫無';
     }
 
     // 更新院長建議劑量
-    const directorDosage = document.querySelector('.director-dosage');
+    const directorDosage = document.querySelector('.director_dosage');
     if (directorDosage) directorDosage.textContent = drug.director_dosage;
 
     // 更新儲存位置按鈕狀態
@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', function() {
         navContainer.appendChild(controls);
 
         // 插入到搜尋結果區域上方
-        const searchResultsSection = document.querySelector('.search-results');
+        const searchResultsSection = document.querySelector('.search_results');
         if (searchResultsSection) {
           searchResultsSection.parentNode.insertBefore(navContainer, searchResultsSection);
         }

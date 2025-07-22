@@ -1,41 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-image: url('/img/新螺安背景.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  position: relative;
-}
-
-body::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url('/img/新螺安背景.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  filter: blur(3px);
-  z-index: -1;
-}
-
-.main-container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 20px;
-  position: relative;
-  z-index: 1;
-}
+/* 搜尋結果頁面專用樣式 */
 
 .header {
   text-align: center;
@@ -44,98 +7,62 @@ body::before {
 }
 
 .title {
-  color: #333;
-  font-size: 28px;
-  font-weight: bold;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
   padding: 20px;
-  border-radius: 15px;
+  border-radius: var(--border_radius_medium);
   margin: 0 auto;
   display: inline-block;
 }
 
-.content-container {
-  display: block;
-  min-height: 80vh;
-}
-
-.search-column {
-  background: rgba(255, 255, 255, 0.9);
+.search_column {
+  background: var(--background_white);
   padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: var(--border_radius_medium);
+  box-shadow: var(--shadow_heavy);
   backdrop-filter: blur(10px);
   width: 100%;
 }
 
-.return-btn {
-  position: absolute;
-  top: 50%;
-  left: 20px;
-  transform: translateY(-50%);
-  background: #4285f4;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 10px rgba(66, 133, 244, 0.3);
-  z-index: 10;
-}
-
-.return-btn:hover {
-  background: #3367d6;
-  transform: translateY(-50%) translateY(-2px);
-  box-shadow: 0 4px 15px rgba(66, 133, 244, 0.4);
-}
-
-.return-btn:active {
-  transform: translateY(-50%) translateY(0);
-}
-
-.search-column h2 {
-  color: #333;
+.search_column h2 {
+  color: var(--text_primary);
   font-size: 24px;
   margin-bottom: 20px;
-  border-bottom: 2px solid #4285f4;
+  border-bottom: 2px solid var(--primary_color);
   padding-bottom: 10px;
   text-align: center;
 }
 
-.search-results,
-.drug-details {
+.search_results,
+.drug_details {
   min-height: 500px;
   padding: 20px 0;
 }
 
-.drug-image-container {
+.drug_image_container {
   display: flex;
   justify-content: center;
   margin-bottom: 15px;
 }
 
-.drug-image {
+.drug_image {
   max-width: 200px;
   max-height: 200px;
   width: auto;
   height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: var(--border_radius_small);
+  box-shadow: var(--shadow_light);
   display: block;
 }
 
-.detail-item {
+.detail_item {
   margin-bottom: 25px;
   padding: 15px;
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 8px;
-  border-left: 4px solid #4285f4;
+  background: var(--background_medium);
+  border-radius: var(--border_radius_small);
+  border-left: 4px solid var(--primary_color);
 }
 
-.detail-item h3 {
-  color: #333;
+.detail_item h3 {
+  color: var(--text_primary);
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 10px;
@@ -143,35 +70,35 @@ body::before {
   padding-bottom: 5px;
 }
 
-.drug-name-zh {
+.drug_name_zh {
   font-size: 18px;
   font-weight: bold;
-  color: #333;
+  color: var(--text_primary);
   margin-bottom: 5px;
 }
 
-.drug-name-en {
+.drug_name_en {
   font-size: 16px;
-  color: #666;
+  color: var(--text_secondary);
   font-style: italic;
   margin-bottom: 0;
 }
 
-.common-dosage,
-.director-dosage {
+.common_dosage,
+.director_dosage {
   font-size: 14px;
   color: #555;
   line-height: 1.5;
   margin-bottom: 0;
 }
 
-.director-dosage {
+.director_dosage {
   font-weight: bold;
-  color: #d32f2f;
+  color: var(--danger_color);
 }
 
-.toggle-btn {
-  background: #4285f4;
+.toggle_btn {
+  background: var(--primary_color);
   color: white;
   border: none;
   padding: 8px 15px;
@@ -179,67 +106,67 @@ body::before {
   cursor: pointer;
   font-size: 14px;
   margin-bottom: 10px;
-  transition: background 0.3s ease;
+  transition: var(--transition_normal);
 }
 
-.toggle-btn:hover {
-  background: #3367d6;
+.toggle_btn:hover {
+  background: var(--primary_hover);
 }
 
-.side-effects {
+.side_effects {
   padding: 15px;
-  background: rgba(255, 255, 255, 0.3);
+  background: var(--background_transparent);
   border-radius: 5px;
   margin-top: 10px;
   border: 1px solid #e0e0e0;
 }
 
-.side-effects p {
+.side_effects p {
   font-size: 14px;
   color: #555;
   line-height: 1.5;
   margin-bottom: 0;
 }
 
-.package-link {
+.package_link {
   display: inline-block;
-  background: #34a853;
+  background: var(--success_color);
   color: white;
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 14px;
-  transition: background 0.3s ease;
+  transition: var(--transition_normal);
 }
 
-.package-link:hover {
-  background: #2d8f47;
+.package_link:hover {
+  background: var(--success_hover);
   text-decoration: none;
 }
 
-.cabinet-table {
+.cabinet_table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
   background: rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
+  border-radius: var(--border_radius_small);
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow_medium);
 }
 
-.cabinet-table td {
-  border: 2px solid #4285f4;
+.cabinet_table td {
+  border: 2px solid var(--primary_color);
   padding: 8px;
   text-align: center;
   background: rgba(255, 255, 255, 0.7);
-  transition: all 0.3s ease;
+  transition: var(--transition_normal);
 }
 
-.cabinet-table td:hover {
+.cabinet_table td:hover {
   background: rgba(66, 133, 244, 0.2);
 }
 
-.sub-grid {
+.sub_grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -247,7 +174,7 @@ body::before {
   min-height: 90px;
 }
 
-.sub-cell {
+.sub_cell {
   background: rgba(255, 255, 255, 0.95);
   border: 1px solid #ddd;
   display: flex;
@@ -255,20 +182,20 @@ body::before {
   justify-content: center;
   font-size: 12px;
   font-weight: bold;
-  color: #333;
+  color: var(--text_primary);
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: var(--transition_fast);
   border-radius: 4px;
   min-height: 30px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow_light);
 }
 
-.sub-cell:hover {
+.sub_cell:hover {
   background: rgba(66, 133, 244, 0.3);
   transform: scale(1.1);
 }
 
-.cabinet-header {
+.cabinet_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -276,7 +203,7 @@ body::before {
   position: relative;
 }
 
-.cabinet-header h2 {
+.cabinet_header h2 {
   margin-bottom: 0;
   position: absolute;
   left: 50%;
@@ -284,8 +211,8 @@ body::before {
   text-align: center;
 }
 
-.storage-location-btn {
-  background: #ff9800;
+.storage_location_btn {
+  background: var(--secondary_color);
   color: white;
   border: none;
   padding: 10px 20px;
@@ -293,47 +220,42 @@ body::before {
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: var(--transition_normal);
   box-shadow: 0 2px 5px rgba(255, 152, 0, 0.3);
 }
 
-.storage-location-btn:hover {
-  background: #f57c00;
+.storage_location_btn:hover {
+  background: var(--secondary_hover);
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(255, 152, 0, 0.4);
 }
 
-.storage-location-btn:active {
+.storage_location_btn:active {
   transform: translateY(0);
   box-shadow: 0 2px 5px rgba(255, 152, 0, 0.3);
 }
 
-.cabinet-section {
+.cabinet_section {
   margin-bottom: 30px;
   padding: 25px;
-  background: rgba(255, 255, 255, 0.85);
+  background: var(--background_light);
   border-radius: 12px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 /* 響應式設計 */
-@media (min-width: 1600px) {
-  .main-container {
-    max-width: 1600px;
-  }
-  
-  .left-column {
-    padding: 40px;
-  }
-}
-
 @media (max-width: 768px) {
-  .main-container {
-    padding: 15px;
+  .search_column {
+    padding: 20px;
   }
   
-  .left-column {
-    padding: 20px;
+  .sub_grid {
+    min-height: 70px;
+  }
+  
+  .sub_cell {
+    font-size: 11px;
+    min-height: 25px;
   }
 }

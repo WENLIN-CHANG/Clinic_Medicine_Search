@@ -24,6 +24,15 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
   storageLocationBtn.addEventListener('click', function() {
+    // 儲存當前藥物ID到localStorage供儲存位置頁面使用
+    const searchResults = JSON.parse(localStorage.getItem('searchResults') || '[]');
+    const currentIndex = parseInt(localStorage.getItem('currentDrugIndex') || '0');
+    const currentDrug = searchResults[currentIndex];
+    
+    if (currentDrug && currentDrug.id) {
+      localStorage.setItem('currentDrugId', currentDrug.id.toString());
+    }
+    
     window.location.href = '/html/storage_location.html';
   });
 
